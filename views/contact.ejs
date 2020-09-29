@@ -9,17 +9,36 @@
   <% include partials/menu %>
 
   <div class="container-fluid bg-3 text-center">
-    <h3><%= title %></h3><br>
+    <h3 class=""><%= title %></h3><br>
     <div class="row">
       <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="form-group">
+            <input type="email" name="myemail" id="myemail" value="To: qham8@my.centennialcollege.ca" class="form-control" placeholder="Your Email *" required="required" readonly="readonly">
+        </div>
+        <div class="form-group">
+                  <input type="text" name="fname" id="fname" class="form-control" placeholder="Your First Name *" required="required">
+        </div>
+        <div class="form-group">
+                  <input type="text" name="lname" id="lname" class="form-control" placeholder="Your Last Name *" required="required">
+        </div>
+        <div class="form-group">
+                  <input type="text" name="email" id="email" class="form-control" placeholder="Your EMAIL *" required="required">
+        </div>
+
       </div>
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="col-sm-8">
+        <div class="form-group">
+                <textarea name="text" id="text" class="form-control" placeholder="Your Message *" required="required" rows="6"></textarea>
+                          <p class="help-block text-danger"></p>
+        </div>
+
+        <div class="form-group text-center">
+                        <div id="success"></div>
+                        <a href="/" id="sendMessageButton" class="btn btn-primary btn-rounded btn-xl text-uppercase" type="submit">Send Message</a>
+        </div>
+
       </div>
-      <div class="col-sm-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
+
     </div>
   </div>
 
